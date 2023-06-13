@@ -1,7 +1,0 @@
-backstage:
-  extraEnvVars:
-  ingress:
-    enabled: true
-    className: nginx
-  postrgesql:
-    enabled: true

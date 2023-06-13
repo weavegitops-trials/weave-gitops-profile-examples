@@ -1,6 +1,0 @@
-flagger:
-  prometheus:
-    install: true
-  meshProvider: nginx
-loadtester:
-  logLevel: debug
