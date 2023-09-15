@@ -9,7 +9,7 @@ gloo-platform:
     manageAddonNamespace: true    
   licensing:
     # glooMeshLicenseKey: $GLOO_MESH_LICENSE_KEY
-    licenseSecretName: license-keys
+    licenseSecretName: goo-license-key
   common:
     cluster: cluster-1
   glooAgent:
