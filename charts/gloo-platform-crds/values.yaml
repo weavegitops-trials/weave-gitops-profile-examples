@@ -1,2 +1,2 @@
 gloo-platform-crds:
-  enbaled: true
+  installIstioOperator: true
