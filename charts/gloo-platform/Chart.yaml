@@ -1,5 +1,5 @@
 apiVersion: v2
-name: gloo-platform-crds
+name: gloo-platform
 description: A Weaveworks Helm chart for gloo-platform-crds
 type: application
 version: 0.0.1
@@ -13,7 +13,7 @@ maintainers:
 annotations:
   "weave.works/profile": gloo-platform-crds
   "weave.works/category": Ingress
-  "weave.works/layer": layer-1
+  "weave.works/layer": layer-2
 
 dependencies:
 - name: gloo-platform
