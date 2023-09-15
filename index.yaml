@@ -278,6 +278,28 @@ entries:
     urls:
     - https://github.com/weavegitops-trials/weave-gitops-profile-examples/releases/download/flagger-0.0.5/flagger-0.0.5.tgz
     version: 0.0.5
+  gloo-platform:
+  - annotations:
+      weave.works/category: Ingress
+      weave.works/layer: layer-2
+      weave.works/profile: gloo-platform-crds
+    apiVersion: v2
+    created: "2023-09-15T13:51:52.790058556Z"
+    dependencies:
+    - name: gloo-platform
+      repository: https://storage.googleapis.com/gloo-platform/helm-charts
+      version: 2.4.0
+    description: A Weaveworks Helm chart for gloo-platform-crds
+    digest: fc26ae453ea8c9c01c0eb4fce54c3dbe528eae300b071563dfd5e6c386793cba
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: support@weave.works
+      name: Weaveworks
+    name: gloo-platform
+    type: application
+    urls:
+    - https://github.com/weavegitops-trials/weave-gitops-profile-examples/releases/download/gloo-platform-0.0.1/gloo-platform-0.0.1.tgz
+    version: 0.0.1
   gloo-platform-crds:
   - annotations:
       weave.works/category: Ingress
