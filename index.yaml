@@ -306,6 +306,27 @@ entries:
       weave.works/layer: layer-1
       weave.works/profile: gloo-platform-crds
     apiVersion: v2
+    created: "2023-09-15T14:07:08.154090562Z"
+    dependencies:
+    - name: gloo-platform-crds
+      repository: https://storage.googleapis.com/gloo-platform/helm-charts
+      version: 2.4.0
+    description: A Weaveworks Helm chart for gloo-platform-crds
+    digest: 35f7dd2aa7be3a8f21be8f3f9d0d8e8744175420b45d0f96221c9a61ea0458c1
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: support@weave.works
+      name: Weaveworks
+    name: gloo-platform-crds
+    type: application
+    urls:
+    - https://github.com/weavegitops-trials/weave-gitops-profile-examples/releases/download/gloo-platform-crds-0.0.2/gloo-platform-crds-0.0.2.tgz
+    version: 0.0.2
+  - annotations:
+      weave.works/category: Ingress
+      weave.works/layer: layer-1
+      weave.works/profile: gloo-platform-crds
+    apiVersion: v2
     created: "2023-09-15T13:39:00.886966303Z"
     dependencies:
     - name: gloo-platform
