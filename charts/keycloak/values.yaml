@@ -11,4 +11,4 @@ keycloak:
     enabled: true
     ingressClassName: nginx
     hostname: auth.solo-weaveworks-webinar.trial.cx.weave.works
-    tls: enabled
+    tls: true
