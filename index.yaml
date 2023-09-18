@@ -444,6 +444,42 @@ entries:
     urls:
     - https://github.com/weavegitops-trials/weave-gitops-profile-examples/releases/download/ingress-nginx-0.0.19/ingress-nginx-0.0.19.tgz
     version: 0.0.19
+  keycloak:
+  - annotations:
+      weave.works/category: Identity and Access Management
+      weave.works/links: |
+        - name: Chart Sources
+          url: https://charts.bitnami.com/bitnami
+        - name: Upstream Project
+          url: https://kafka.apache.org/
+      weave.works/profile: keycloak
+      weave.works/profile-ci: |
+        - "gke"
+    apiVersion: v2
+    created: "2023-09-18T16:00:34.585718904Z"
+    dependencies:
+    - name: keycloak
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.1.5
+    description: A Weaveworks Helm chart for Bitnami Keycloak
+    digest: 305fadb6b148a31bcef16e3d7534b50263d5a16d1fd9ed1e871415de597e127b
+    home: https://github.com/weaveworks/profiles-catalog
+    icon: https://bitnami.com/assets/stacks/keycloak/img/keycloak-stack-220x234.png
+    keywords:
+    - keycloak
+    - identity
+    - access-management
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: support@weave.works
+      name: Weaveworks
+    name: keycloak
+    sources:
+    - https://github.com/bitnami/charts/tree/master/bitnami/keycloak
+    type: application
+    urls:
+    - https://github.com/weavegitops-trials/weave-gitops-profile-examples/releases/download/keycloak-0.0.1/keycloak-0.0.1.tgz
+    version: 0.0.1
   weave-policy-agent:
   - annotations:
       weave.works/category: Policy
