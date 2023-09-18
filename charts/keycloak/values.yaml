@@ -17,7 +17,13 @@ keycloak:
     tls: true
   extraStartupArgs: |
     -Dkeycloak.frontendUrl=https://auth.solo-weaveworks-webinar.trial.cx.weave.works
-
+  extraEnvVars:
+    - name: KEYCLOAK_LOG_LEVEL
+      value: DEBUG
+    - name: KEYCLOAK_PROXY_ADDRESS_FORWARDING
+      value: "true"
+    - name: KEYCLOAK_FRONTEND_URL
+      value: https://auth.solo-weaveworks-webinar.trial.cx.weave.works
 
   # extraEnvVars:
   # - name: KC_HOSTNAME_STRICT_HTTPS
