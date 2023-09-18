@@ -7,3 +7,8 @@ keycloak:
     #   annotations:
     #     service.beta.kubernetes.io/aws-load-balancer-scheme: internal
     annotations: {}
+  ingress:
+    enabled: true
+    ingressClassName: nginx
+    hostname: auth.solo-weaveworks-webinar.trial.cx.weave.works
+    tls: enabled
