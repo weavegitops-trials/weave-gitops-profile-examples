@@ -10,7 +10,25 @@ keycloak:
   ingress:
     annotations:
       cert-manager.io/cluster-issuer: letsencrypt
+      nginx.ingress.kubernetes.io/ssl-redirect: "true"
     enabled: true
     ingressClassName: nginx
     hostname: auth.solo-weaveworks-webinar.trial.cx.weave.works
     tls: true
+  extraStartupArgs: |
+    -Dkeycloak.frontendUrl=https://auth.solo-weaveworks-webinar.trial.cx.weave.works
+
+
+  # extraEnvVars:
+  # - name: KC_HOSTNAME_STRICT_HTTPS
+  #   value: "false"
+  # - name: KEYCLOAK_FRONTEND_URL
+  #   value: "https://auth.solo-weaveworks-webinar.trial.cx.weave.works"
+  # - name: PROXY_ADDRESS_FORWARDING
+  #   value: "tue"
+# KC_HOSTNAME_STRICT: false
+# KC_HOSTNAME_STRICT_HTTPS: false
+# - name: POSTGRESQL_ENABLE_LDA:inP
+#   value: "no"
+# PROXY_ADDRESS_FORWARDING: "true"
+# KEYCLOAK_ENABLE_HTTPS: "true"
