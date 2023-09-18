@@ -456,6 +456,41 @@ entries:
       weave.works/profile-ci: |
         - "gke"
     apiVersion: v2
+    created: "2023-09-18T19:51:40.520101478Z"
+    dependencies:
+    - name: keycloak
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.1.5
+    description: A Weaveworks Helm chart for Bitnami Keycloak
+    digest: f7b4816a89357327344ae7a6fc32eedf688f44d6f3d98f84b3e9172771c51d98
+    home: https://github.com/weaveworks/profiles-catalog
+    icon: https://bitnami.com/assets/stacks/keycloak/img/keycloak-stack-220x234.png
+    keywords:
+    - keycloak
+    - identity
+    - access-management
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: support@weave.works
+      name: Weaveworks
+    name: keycloak
+    sources:
+    - https://github.com/bitnami/charts/tree/master/bitnami/keycloak
+    type: application
+    urls:
+    - https://github.com/weavegitops-trials/weave-gitops-profile-examples/releases/download/keycloak-0.0.7/keycloak-0.0.7.tgz
+    version: 0.0.7
+  - annotations:
+      weave.works/category: Identity and Access Management
+      weave.works/links: |
+        - name: Chart Sources
+          url: https://charts.bitnami.com/bitnami
+        - name: Upstream Project
+          url: https://kafka.apache.org/
+      weave.works/profile: keycloak
+      weave.works/profile-ci: |
+        - "gke"
+    apiVersion: v2
     created: "2023-09-18T19:36:29.189739376Z"
     dependencies:
     - name: keycloak
