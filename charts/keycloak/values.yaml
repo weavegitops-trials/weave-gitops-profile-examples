@@ -24,7 +24,14 @@ keycloak:
       value: "true"
     - name: KEYCLOAK_FRONTEND_URL
       value: https://auth.solo-weaveworks-webinar.trial.cx.weave.works
-
+    - name: KC_HOSTNAME_STRICT_HTTPS
+      value: "false"
+    - name: PROXY_ADDRESS_FORWARDING
+      value: "true"
+    - name: KC_HOSTNAME_STRICT
+      value: "false"
+    - name: KC_HOSTNAME_URL
+      value: "https://auth.solo-weaveworks-webinar.trial.cx.weave.works"
   # extraEnvVars:
   # - name: KC_HOSTNAME_STRICT_HTTPS
   #   value: "false"
