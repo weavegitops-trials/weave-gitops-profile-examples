@@ -23,6 +23,7 @@ gloo-platform:
     createGlobalWorkspace: true
   glooUi:
     enabled: true
+    serviceType: LoadBalancer
   istioInstallations:
     enabled: true
   prometheus:
